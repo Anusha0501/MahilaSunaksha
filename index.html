@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahila Sunaksha - Find the Safest Path</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo" class="logo-img"> 
+            <h1 id="site-title">Mahila Sunaksha</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" id="home-link">Home</a></li>
+            <li><a href="login.html" id="login-link">Login</a></li>
+        </ul>
+    </nav>
+    
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2 id="hero-title">Find the Safest Path</h2>
+            <p id="hero-description">Plan your journey with crime rate, public activity, and lighting information.</p>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="start" placeholder="Start Point">
+            <input type="text" id="destination" placeholder="Destination">
+            <button class="btn" id="find-route-btn">Find Safe Route</button>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div id="safety-scores"></div>
+
+        <div id="map"></div>
+    </section>
+
+    <section class="reports-reviews">
+        <div class="report-section">
+            <h2>Report an Incident</h2>
+            <form id="report-form">
+                <label for="incident-type">Incident Type:</label>
+                <input type="text" id="incident-type" placeholder="Type of incident" required>
+                <label for="incident-location">Location:</label>
+                <input type="text" id="incident-location" placeholder="Location" required>
+                <label for="incident-description">Description:</label>
+                <textarea id="incident-description" placeholder="Description of the incident" required></textarea>
+                <button type="submit" class="btn">Submit Report</button>
+            </form>
+        </div>
+
+        <div class="review-section">
+            <h2>Recent Reports</h2>
+            <ul id="report-list">
+                <li>
+                    <h3>Theft</h3>
+                    <p><strong>Location:</strong> Main Street</p>
+                    <p><strong>Description:</strong> A wallet was stolen from a parked car.</p>
+                    <p><strong>Date:</strong> September 7, 2024</p>
+                </li>
+                <li>
+                    <h3>Harassment</h3>
+                    <p><strong>Location:</strong> Elm Street</p>
+                    <p><strong>Description:</strong> Unusual behavior reported near the park.</p>
+                    <p><strong>Date:</strong> September 6, 2024</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p id="footer-text">&copy; 2024 Mahila Sunaksha | Designed to keep you safe.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
