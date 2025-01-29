@@ -1,4 +1,5 @@
 # Mahila Sunaksha: Women’s Safety Web Application
+![logo](https://github.com/user-attachments/assets/7f00ba07-ec41-477b-83b5-960ca5823359)
 
 ## Overview
 Mahila Sunaksha is a web application designed to enhance women's safety by providing real-time, data-driven route suggestions. By calculating safety scores for each district based on crime rates, it helps users select the safest routes and avoid high-risk areas. The app integrates live crime data, empowering women to make informed travel decisions, thereby promoting security in communities.
